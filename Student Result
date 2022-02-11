@@ -1,0 +1,36 @@
+# Write a program to Generate Student ResultRequired Fields(sno,name,group,6 subjects,total,avg,grade .
+sno=int(input('enter sno:'))
+sname=input('enter name')
+s1=int(input('s1 marks:'))
+s2=int(input('s2 marks'))
+s3=int(input('s3 marks'))
+s4=int(input('s4 marks'))
+s5=int(input('s5 marks'))
+s6=int(input('s6 marks'))
+if s1<36 and s2<36 and s3<36 and s4<36 and s5<36 and s6>36:
+    print('fail')
+total=s1+s2+s3+s4+s5+s6
+avg=total/6
+if avg>=91:
+ print('o grade')
+elif avg>=81:
+ print('a grade')
+elif avg>=71:
+ print('b grade')
+elif avg>=61:
+ print('c grade')
+elif avg>=51:
+ print('d grade')
+elif avg>=36:
+ print('pass')
+
+output:
+enter sno:1
+enter nameabhi
+s1 marks:99
+s2 marks88
+s3 marks99
+s4 marks99
+s5 marks99
+s6 marks88
+o grade
